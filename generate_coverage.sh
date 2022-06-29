@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-MIN_COVERAGE="90"
+MIN_COVERAGE="95"
 
 GREEN="\e[32;1m%s\e[0m\n"
 RED="\e[31;1m%s\e[0m\n"
