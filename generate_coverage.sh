@@ -23,4 +23,9 @@ fi
 
 printf "${GREEN}" "Current code coverage: ${CODE_COVERAGE}%"
 
+# pass first argument equal to false to avoid generating the report
+if ! $1; then
+    exit
+fi
+
 genhtml coverage/lcov.info -o coverage/report

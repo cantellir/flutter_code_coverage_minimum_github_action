@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install and set Flutter version
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '2.8.1'
+      
+      - name: Install melos
+        run: dart pub global activate melos
+        
+      # install and initialize packages
+      - name: Melos bootstrap
+        run: melos bootstrap
+        
+      # run script to test, merge coverage files and analize minimum coverage
+      - name: Run generate coverage
+        run: ./generate_coverage.sh false
