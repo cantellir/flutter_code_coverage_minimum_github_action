@@ -1,0 +1,1 @@
+# Flutter code coverage with mininum coverage analysis with github action
