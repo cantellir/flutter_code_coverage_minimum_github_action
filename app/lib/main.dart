@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo test workflow'),
+      home: const MyHomePage(title: 'Flutter Demo test workflow on commit'),
     );
   }
 }
