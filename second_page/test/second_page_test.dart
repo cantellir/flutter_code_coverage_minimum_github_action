@@ -27,7 +27,7 @@ void main() {
       (WidgetTester tester) async {
     await createSecondPage(tester);
 
-    expect(find.text('This is the second page!'), findsOneWidget);
+    expect(find.text('This is the second page!'), findsNothing);
   });
 
   testWidgets('Should go back to first page when go back is pressed',
