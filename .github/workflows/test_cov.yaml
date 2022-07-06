@@ -20,6 +20,10 @@ jobs:
         with:
           flutter-version: '3.0.2'
       
+      # install lcov
+      - name: Install lcov
+        run: sudo apt-get install -y lcov
+
       - name: Install melos
         run: dart pub global activate melos
         
