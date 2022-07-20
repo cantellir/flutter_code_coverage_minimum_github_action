@@ -20,15 +20,13 @@ jobs:
         with:
           flutter-version: '3.0.2'
       
-      # install lcov
       - name: Install lcov
         run: sudo apt-get install -y lcov
 
       - name: Install melos
         run: dart pub global activate melos
         
-      # install and initialize packages
-      - name: Melos bootstrap
+      - name: Install all packages
         run: melos bootstrap
         
       # run script to test, merge coverage files and analize minimum coverage
