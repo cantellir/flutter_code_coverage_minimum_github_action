@@ -6,7 +6,7 @@ RED="\e[31;1m%s\e[0m\n"
 BLUE="\e[36;1m%s\e[0m\n"
 
 if ! melos run test_cov; then
-    exit
+    exit 1
 fi
 
 melos run union_cov
