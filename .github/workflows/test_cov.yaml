@@ -32,3 +32,8 @@ jobs:
       # run script to test, merge coverage files and analize minimum coverage
       - name: Run generate coverage
         run: ./generate_coverage.sh false
+
+      - name: upload coverage to codecov
+        uses: codecov/codecov-action@v2
+        with:
+          file: coverage/lcov.info
