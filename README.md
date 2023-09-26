@@ -21,7 +21,7 @@ In order, the `.yaml` file will execute:
 - Install lcov (needed to extract information from coverage file);
 - Install melos (needed to handle with multi-package app);
 - Initalize melos (like a pub get in every package);
-- Run `./generate_coverage.sh` script file (resposible for run tests and generate coverage. This script will fail if tests or coverage fails).
+- Run `./generate_coverage.sh` script file (responsible for run tests and generate coverage. This script will fail if tests or coverage fails).
 
 ## Additional info
 
